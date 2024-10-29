@@ -38,7 +38,7 @@ tests:
 
 .PHONY: glossify  ## 📚 To run the glossify entry point script
 glossify:
-	uv run python glossify/cli.py
+	uv run python glossify/cli.py $$ARGS
 
 .PHONY: glossify-help  ## 📚 To display the help message for glossify entry point script
 glossify-help:
