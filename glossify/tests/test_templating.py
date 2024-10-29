@@ -1,6 +1,6 @@
-from src.parsing import GlossaryTerm
+from glossify.src.parsing import GlossaryTerm
 
-from src.templating import templating_glossary_terms_to_markdown_list
+from glossify.src.templating import templating_glossary_terms_to_markdown_list
 
 
 def test_templating_glossary_term_to_markdown_list():

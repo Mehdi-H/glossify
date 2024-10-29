@@ -11,6 +11,14 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "glossify",
     "pytest>=8.3.3",
     "ruff>=0.7.1",
 ]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+demo-app = "glossify.cli:main"

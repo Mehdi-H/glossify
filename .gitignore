@@ -1,4 +1,8 @@
 /.idea/
 /.venv/
 
-/glossary*.md
+/glossify/glossary*.md
+/glossify/src/glossary*.md
+
+/glossify.egg-info/
+/glossify/src/glossify.egg-info/

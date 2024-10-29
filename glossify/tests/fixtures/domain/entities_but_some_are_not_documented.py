@@ -1,5 +1,6 @@
 """These smart city entities are the core building blocks of the smart city infrastructure."""
 
+
 class VariableMessageSign:
     """
     🚦 Represents a dynamic road sign used in smart traffic management systems.
@@ -50,4 +51,13 @@ class TrafficFlowSensor:
     A TrafficFlowSensor is a crucial component in smart traffic management systems,
     providing real-time data on vehicle movement, density, and speed.
     """
+    pass
+
+
+class WeatherStationWithoutDocstring:
+    pass
+
+
+class SolarPanelWithoutDocstring:
+    """"""
     pass

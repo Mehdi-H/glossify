@@ -24,6 +24,10 @@ help:
 dependencies:
 	uv sync
 
+.PHONY: dependencies-upgrade  ## 📦 To upgrade all dependencies
+dependencies-upgrade:
+	uv lock --upgrade
+
 .PHONY: lint  ## 🚨 To run the linter against the codebase
 lint:
 	uv run ruff check
@@ -34,8 +38,8 @@ tests:
 
 .PHONY: glossify  ## 📚 To run the glossify entry point script
 glossify:
-	uv run python main.py
+	uv run python glossify/cli.py
 
 .PHONY: glossify-help  ## 📚 To display the help message for glossify entry point script
 glossify-help:
-	uv run python main.py --help
+	uv run python glossify/cli.py --help

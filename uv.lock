@@ -25,7 +25,7 @@ wheels = [
 [[package]]
 name = "glossify"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "jinja2" },
     { name = "typer" },
@@ -45,6 +45,7 @@ requires-dist = [
 
 [package.metadata.dependency-groups]
 dev = [
+    { name = "glossify" },
     { name = "pytest", specifier = ">=8.3.3" },
     { name = "ruff", specifier = ">=0.7.1" },
 ]

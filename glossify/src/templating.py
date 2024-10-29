@@ -1,9 +1,8 @@
 import os
-import datetime
 
 from jinja2 import Environment, FileSystemLoader
 
-from src.parsing import GlossaryTerm
+from glossify.src.parsing import GlossaryTerm
 
 
 def templating_glossary_terms_to_markdown_list(glossary_terms: set[GlossaryTerm]) -> str:
@@ -13,5 +12,4 @@ def templating_glossary_terms_to_markdown_list(glossary_terms: set[GlossaryTerm]
     template = environment.get_template("glossary_as_markdown_list.md")
     return template.render(
         glossary_terms=sorted_glossary_terms,
-        #generation_date=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M:%S %Z').replace('-', '--').replace(' ', '_')
     )
